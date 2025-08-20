@@ -83,10 +83,4 @@ mvn test
 
 ---
 
-## 7. Licença
-
-Este projeto é parte das atividades acadêmicas da disciplina de Projeto de Sistemas e não possui licença aberta. Uso irrestrito apenas para fins educacionais.
-
----
-
 **Gustavo Saraiva – 2025**
