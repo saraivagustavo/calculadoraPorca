@@ -24,12 +24,12 @@ Este repositório contém duas versões de uma calculadora em Java:
 ```
 /
 ├── src/main/java/br/ifes/ps/calculadora/
-│   ├── Main.java          – Versão original “porca”
 │   ├── model/             – Classes do modelo (operações, entidades)
 │   ├── view/              – Parte visual (entrada/saída)
 │   ├── controller/        – Controladores que orquestram o fluxo
-│   ├── util/              – Classe utilitária para reflections
+│   ├── Main               – Classe principal com aplicação do MVC
 └── pom.xml                – Arquivo de build do Maven
+├── Main.java              – Versão original “porca”
 ```
 
 ---
