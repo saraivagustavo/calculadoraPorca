@@ -36,14 +36,11 @@ public class Menu {
             System.out.print("Opção: ");
             opcao = s.nextInt();
 
-            // verificação pra ver se a opção é pra sair
-            if (opcao == 0) {
-                continue;
-            }
-
-            //verificação pra ver se digitou opção inválida
-            if(opcao < 1 || opcao > operacoesList.size()) {
-                System.out.println("Opção inválida. Tente novamente.");
+            // verificação se é sair ou inválido
+            if (opcao <= 0 || opcao > operacoesList.size()) {
+                if (opcao < 0 || opcao > operacoesList.size()) {
+                    System.out.println("Opção inválida. Tente novamente.");
+                }
                 continue;
             }
 
@@ -53,12 +50,10 @@ public class Menu {
                 //usando reflexão para instanciar a classe selecionada
                 Operacao operacao = classeSelecionada.getDeclaredConstructor().newInstance();
 
-                int numero1 = 0;
                 int numero2 = 0;
-
                 //o primeiro número sempre vai ser necessário
                 System.out.print("Digite o primeiro número: ");
-                numero1 = s.nextInt();
+                int numero1 = s.nextInt();
 
                 //problema do fatorial: só tem um número pra calcular, verificar dependendo da operação
                 if (operacao.getNumeroOperandos() == 2) {
